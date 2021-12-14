@@ -24,6 +24,8 @@ I will write down the steps I took to fullfil this project on this README.md fil
 
 # What I learned
 
+Programming is a bitch, but rewarding.
+
 # Continued Development
 
 # Useful Resources
