@@ -20,11 +20,14 @@ I will write down the steps I took to fullfil this project on this README.md fil
             and store the results of each round and finally reports a winner or loser
         4) Use prompt to get input from the user
     - Planning
+        1) how to return random string from array of strings
+        2) how to make input case insensitive
+        3) write logic for the game
+            a) Break down the logic to simpler steps
+
     - Pseudocode
 
 # What I learned
-
-Programming is a bitch, but rewarding.
 
 # Continued Development
 
