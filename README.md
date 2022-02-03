@@ -25,8 +25,6 @@ I will write down the steps I took to fullfil this project on this README.md fil
         3) write logic for the game
             a) Break down the logic to simpler steps
 
-    - Pseudocode
-
 # What I learned
 
 # Continued Development
