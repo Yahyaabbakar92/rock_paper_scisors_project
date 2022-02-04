@@ -2,6 +2,9 @@ let computerOptions = ["rock", "paper", "scissors"];
 let playerOptions = prompt("Please select rock, paper or scissors");
 let playerOption = playerOptions.toLowerCase();
 let computerOption = computerPlay();
+let userScore = 0;
+let computerScore = 0;
+let numberOfRounds = 0;
 
 // null toLowerCase isn't an object and returns a type error
 
@@ -35,4 +38,42 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-console.log(playRound(playerOption, computerOption));
+// console.log(playRound(playerOption, computerOption));
+
+function game() {
+  while (numberOfRounds <= 5) {
+    playRound(playerOption, computerOption);
+    if (playRound() === `You win! ${playerOption} beats ${computerOption}`) {
+      userScore++;
+      numberOfRounds++;
+      computerScore += 0;
+      return numberOfRounds;
+    } else if (
+      playRound() === `You lose! ${computerOption} beats ${playerOption}`
+    ) {
+      userScore += 0;
+      numberOfRounds++;
+      computerScore++;
+      return numberOfRounds;
+    } else if (
+      playRound() === `Draw! ${playerOption} equals ${computerOption}`
+    ) {
+      userScore += 0;
+      numberOfRounds++;
+      computerScore += 0;
+      return numberOfRounds;
+    } else {
+    }
+
+    if (numberOfRounds === 5 && userScore > computerScore) {
+      console.log(`You win`);
+    } else if (numberOfRounds === 5 && userScore < computerScore) {
+      console.log(`You lose`);
+    } else if (numberOfRounds === 5 && userScore === computerScore) {
+      console.log(`tie`);
+    } else {
+    }
+  }
+}
+
+game();
