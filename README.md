@@ -1,4 +1,4 @@
-# rock_paper_scisors_project
+# rock_paper_scissors_project
 
 I will write down the steps I took to fullfil this project on this README.md file
 
@@ -27,6 +27,12 @@ I will write down the steps I took to fullfil this project on this README.md fil
 
 # What I learned
 
+- I need to simply my problem.
+- null toLowerCase isn't an object and returns a type error
+- Read other code to try and come up with the logic otherwise I'll spend a long time.
+
 # Continued Development
+
+- I need to still fix up the game as it loops 5 times but if the scores are both equal, the game over statement either runs before a round statement
 
 # Useful Resources
