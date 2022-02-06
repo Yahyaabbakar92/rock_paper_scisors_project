@@ -9,7 +9,7 @@ function computerPlay() {
 let computerOption = computerPlay();
 let userScore = 0;
 let computerScore = 0;
-let numberOfRounds = 1;
+let numberOfRounds = 0;
 
 // null toLowerCase isn't an object and returns a type error
 
@@ -24,6 +24,7 @@ function playRound(playerSelection, computerSelection) {
   ) {
     userScore += 0;
     computerScore += 0;
+    numberOfRounds++;
     console.log(`Draw! ${playerOption} equals ${computerOption}`);
   } else if (
     (playerOption === "rock" && computerOption === "scissors") ||
@@ -32,7 +33,8 @@ function playRound(playerSelection, computerSelection) {
   ) {
     userScore++;
     computerScore += 0;
-    console.log(`You win! ${playerOption} beats ${computerOption}`);
+    numberOfRounds++;
+    console.log(`You win this round! ${playerOption} beats ${computerOption}`);
   } else if (
     (playerOption === "rock" && computerOption === "paper") ||
     (playerOption === "paper" && computerOption === "scissors") ||
@@ -40,8 +42,12 @@ function playRound(playerSelection, computerSelection) {
   ) {
     userScore += 0;
     computerScore++;
-    console.log(`You lose! ${computerOption} beats ${playerOption}`);
+    numberOfRounds++;
+    console.log(`You lose this round! ${computerOption} beats ${playerOption}`);
   } else {
+    userScore += 0;
+    computerScore += 0;
+    numberOfRounds += 0;
     console.log("Please input rock, paper or scissors");
   }
 }
@@ -51,11 +57,14 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   for (let i = 0; i < 5; i++) {
     playRound();
-    numberOfRounds++;
     if (numberOfRounds === 5 && userScore > computerScore) {
-      console.log("You win the game");
+      console.log(
+        `Game over! You won! You scored ${userScore} and the computer scored ${computerScore}`
+      );
     } else if (numberOfRounds === 5 && userScore < computerScore) {
-      console.log("You lose the game");
+      console.log(
+        `Game over! You lost! You scored ${userScore} and the computer scored ${computerScore}`
+      );
     }
   }
 }
