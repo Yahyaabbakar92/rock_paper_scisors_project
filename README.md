@@ -1,6 +1,7 @@
 # rock_paper_scissors_project
 
 I will write down the steps I took to fullfil this project on this README.md file
+live site: https://yahyaabbakar92.github.io/rock_paper_scisors_project/
 
 # The Challenge
 
